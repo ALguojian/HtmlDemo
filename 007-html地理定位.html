@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>地理定位</title>
+</head>
+<body>
+
+<p id="dress">点击获取地理位置</p>
+<button onclick="getDress()">点击获取</button>
+
+<script>
+
+    var text = document.getElementById("dress");
+
+    function getDress() {
+
+        //检测是否支持地理定位
+        if (navigator.geolocation) {
+
+            navigator.geolocation.getCurrentPosition(showDress, showError)
+        } else {
+            text.innerHTML = "暂不支持获取位置";
+        }
+    }
+
+    function showDress(position) {
+        text.innerHTML = "纬度：" + position.coords.latitude + "<br>经度：" + position.coords.longitude;
+    }
+
+    function showError(error) {
+
+        switch (error.code) {
+
+            case error.PERMISSION_DENIED:
+                text.innerHTML = "用户拒绝了";
+                break;
+            case error.POSITION_UNAVAILABLE:
+                text.innerHTML = "位置信息是不可用的。";
+                break;
+            case error.TIMEOUT:
+                text.innerHTML = "请求用户地理位置超时。";
+                break;
+            default :
+                text.innerHTML = "未知错误。";
+                break;
+        }
+
+    }
+
+</script>
+
+</body>
+</html>

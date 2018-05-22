@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>html拖放</title>
+
+    <script>
+
+        function allowDrop(ev) {
+
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("Text", ev.target.id);
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("Text");
+            //通过ID追加到新的元素中
+            ev.target.appendChild(document.getElementById(data));
+        }
+    </script>
+</head>
+<body>
+
+<div id="divl" ondrop="drop(event)"
+     ondragover="allowDrop(event)"></div>
+
+<!--draggable="true" 设置可拖动-->
+<img id="drag1" src="img_logo.gif" draggable="true"
+     ondragstart="drag(event)" width="333" height="70">
+
+</body>
+</html>
