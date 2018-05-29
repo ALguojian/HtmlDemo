@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>web后台工作，类似于子线程</title>
+</head>
+<body>
+
+<script>
+
+
+    if (typeof (w)==="undefined"){
+
+        w = new Worker("demo_workers.js");
+        w.onmessage=function (ev) {
+            document.getElementById("result").innerHTML=ev.data;
+        };
+
+        // 终止 web worker，并释放浏览器/计算机资源
+        w.terminate();
+    }
+
+</script>
+
+</body>
+</html>

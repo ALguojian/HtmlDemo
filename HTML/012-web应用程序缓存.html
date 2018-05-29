@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" manifest="demo.appcache">
+<head>
+    <meta charset="UTF-8">
+    <title>sql</title>
+</head>
+<body>
+
+每个指定了 manifest 的页面在用户对其访问时都会被缓存。如果未指定 manifest 属性，则页面不会被缓存（除非在 manifest 文件中直接指定了该页面）。
+
+manifest 文件的建议的文件扩展名是：".appcache"。
+
+Remark请注意，manifest 文件需要配置正确的 MIME-type，即 "text/cache-manifest"。必须在 web 服务器上进行配置。
+
+一旦文件被缓存，则浏览器会继续展示已缓存的版本，即使您修改了服务器上的文件。为了确保浏览器更新缓存，您需要更新 manifest 文件。
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>web存储</title>
+</head>
+<body>
+
+<!--在H5之前，主要是使用cookies存储，缺点是：需要在请求头上携带数据，大小在4K之内-->
+
+<script>
+
+    // localStorage - 没有时间限制的数据存储
+    // sessionStorage - 针对一个 session 的数据存储,关闭浏览器，数据就会被删除
+
+    if (typeof (Storage) !== "undefined") {
+
+        //    支持localStorage、sessionStorage
+    } else {
+        //    不支持web存储
+    }
+
+    localStorage.sitename = "哈哈哈😁";
+    document.getElementById("result").innerHTML = "结果是：" + localStorage.sitename;
+
+</script>
+
+</body>
+</html>
