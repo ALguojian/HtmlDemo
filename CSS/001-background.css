@@ -1,0 +1,40 @@
+/*样式以井号#海投表示，这个样式将用于某个id选择器*/
+#para{
+    text-align: center;
+    color: #57CAA1;
+}
+
+/*以点开头，表示class选择器*/
+.center{
+    text-align: left;
+}
+
+/*指定某一个特定html元素的样式*/
+p.center{
+    text-align: end;
+    color: red;
+    margin-bottom: 20rem;
+}
+
+.aaa{
+    /*背景颜色*/
+    background-color: red;
+
+    /*背景图像*/
+    background-image: url("http://asdasd");
+    background-image: url('asdasd.jpg');
+
+    /*水平或垂直平铺*/
+    background-repeat: repeat-x;
+    /*不平铺*/
+    background-repeat: no-repeat;
+
+    /*背景图像是否固定或者随着页面的其余部分滚动。*/
+    background-attachment: fixed;
+
+    /*设置图像在背景中的位置,起始位置*/
+    background-position: right top;
+
+    /*设置图像的堆叠顺序，越小越在下面*/
+    z-index: -1;
+}

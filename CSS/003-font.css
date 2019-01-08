@@ -1,0 +1,35 @@
+.aaa {
+
+    /*设置文本字体，如果字体样式超过一个单词，需要添加括号，多个以逗号隔开*/
+    font-family: "Times New Roman", Times, Serif;
+
+    /*设置文本样式为斜体*/
+    font-style: italic;
+
+    /*设置字体大小*/
+    font-size: 40px;
+
+    /*设置文本加粗*/
+    font-weight: bold;
+
+    /*设置文本转变*/
+    font-variant: small-caps;
+
+    /*使用多个属性*/
+    font: 15px Arial sans-serif;
+
+}
+
+.bbb {
+
+    /*1em=16px*/
+    font-size: 20em;
+
+    font-weight: 100;
+
+}
+
+.ccc {
+
+    font-size: 120%;
+}

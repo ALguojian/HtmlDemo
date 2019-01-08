@@ -1,0 +1,79 @@
+body {
+    color: #57CAA1;
+
+    /*文本的对齐方式*/
+    text-align: left;
+    text-align: right;
+    text-align: center;
+    /*两端对齐*/
+    text-align: justify;
+    /*改变字体间距，使得每行文本两端对齐*/
+    text-justify: inter-word;
+    /*父元素继承*/
+    text-align: inherit;
+
+    /*把段落的最后一行向右对齐*/
+    text-align-last: right;
+    /*火狐浏览器需要这样写*/
+    -moz-text-align-last: right;
+
+    /*装饰文字-下划线*/
+    text-decoration: line-through;
+    /*中划线*/
+    text-decoration: overline;
+    /*闪烁*/
+    text-decoration: blink;
+
+    /*定义下划线颜色*/
+    text-decoration-color: #57CAA1;
+
+    /*文本转换，大写*/
+    text-transform: uppercase;
+
+    /*文本缩进50px*/
+    text-indent: 50px;
+
+    /*指定字符间隙*/
+    letter-spacing: 3px;
+
+    /*指定行间隙*/
+    line-height: 120%;
+
+    /*设置文字反方向*/
+    direction: rtl;
+    unicode-bidi: bidi-override;
+
+    /*增加文本间的空间*/
+    word-spacing: 20px;
+
+    /*禁止文字环绕*/
+    white-space: nowrap;
+
+    /*相对文本垂直对齐*/
+    vertical-align: text-top;
+    vertical-align: text-bottom;
+
+    /*设置文本阴影*/
+    text-shadow: 2px 2px #57CAA1;
+
+    /*设置换行规则，单词内，半角或连字符*/
+    word-break: break-all;
+    word-break: keep-all;
+
+    /*指定如果足够长得话，应该换行/
+    word-wrap: break-word;
+}
+
+h1 {
+    color: red;
+    text-align: right;
+    /*删除文本修饰，一般用于删除链接下划线*/
+    text-decoration: none;
+
+}
+
+h2 {
+    color: rgb(255, 0, 123);
+    text-align: justify;
+    text-decoration: overline;
+}
